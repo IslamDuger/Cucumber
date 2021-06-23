@@ -12,4 +12,8 @@ public class AmazonPage {
     public WebElement searchBox;
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement sonucYazisiElementi;
+    @FindBy(partialLinkText = "Today's Deals")
+    public WebElement todaysButtony;
+    @FindBy(xpath = "(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")
+    public WebElement aramaSonucuIlkUrunIsmiElementi;
 }

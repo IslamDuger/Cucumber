@@ -1,4 +1,4 @@
-@wip
+
   Feature: US1004 Amazon Parametrized
     Background: Amazon sayfasina git
       Given kullanici amazon sayfasina gider

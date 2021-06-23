@@ -14,10 +14,12 @@ public class AmazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
     @Given("kullanici amazon sayfasina gider")
     public void kullaniciAmazonSayfasinaGider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
     }
     @Given("iPhone icin arama yapar")
     public void i_phone_icin_arama_yapar() {
+
         amazonPage.searchBox.sendKeys("iPhone"+ Keys.ENTER);
     }
     @Then("sonuclarin iPhone icerdigini test eder")
@@ -52,4 +54,26 @@ public class AmazonStepDefinitions {
     public void sonuclarin_icerdigini_test_eder(String arananKelime) {
         Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains(arananKelime));
     }
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String sayfaUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(sayfaUrl));
+    }
+
+
+
+    @Then("Todays deals sekmesine tiklar")
+    public void todays_deals_sekmesine_tiklar() {
+        amazonPage.todaysButtony.click();
+    }
+
+    @Then("Todays deals sayfasinda {string} icin arama yapar")
+    public void todays_deals_sayfasinda_icin_arama_yapar(String aranacakKelime) {
+        amazonPage.searchBox.sendKeys(aranacakKelime+Keys.ENTER);
+
+        }
+    @Then("ilk ilan isminde {string} gectigini test eder")
+    public void ilk_ilan_isminde_gectigini_test_eder(String arananKelime) {
+        Assert.assertTrue(amazonPage.aramaSonucuIlkUrunIsmiElementi.getText().contains(arananKelime));
+    }
+
 }

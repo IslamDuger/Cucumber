@@ -1,5 +1,6 @@
+@rapor1
 Feature: US1001_amazon arama
-  @wip
+
   Scenario: TC01_Amazon Arama Yapma
     Given kullanici amazon sayfasina gider
     And iPhone icin arama yapar
