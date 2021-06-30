@@ -1,4 +1,4 @@
-@rapor2
+
 Feature: US1009 Koala  Negative Login
 
   Scenario:12 kullanici gecerli bilgilerle giris yapar

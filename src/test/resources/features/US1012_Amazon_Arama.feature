@@ -1,4 +1,4 @@
-@rapor2
+@rapor1
 Feature: US1012 Amazon Arama
 
   Scenario: TC16 Kullanici Amazonda Mehmet aratir

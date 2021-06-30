@@ -1,4 +1,4 @@
-@rapor2
+
 Feature: US_Farkli url
 
   Scenario Outline:TC Farkli sayfalara

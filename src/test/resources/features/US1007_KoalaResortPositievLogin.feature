@@ -1,4 +1,4 @@
-@rapor1
+
 Feature: US10 Koala Resort Hotels Login
 
   Scenario:TC11 kullanici gecerli bilgilerle giris yapar

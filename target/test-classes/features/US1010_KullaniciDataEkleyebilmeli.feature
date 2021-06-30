@@ -1,4 +1,4 @@
-@rapor2
+
 Feature: US1010_Kullanici Data
 
   Scenario: TC13 DataTableStepDefinition dosyasi ve gerekli step definition’lari olusturun

@@ -13,12 +13,12 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="stepdefinitions",
 
-        tags="@rapor2",
+        tags="",
 
         dryRun=false
 
 
 )
-public class TestRunner2 {
+public class TestRunner02 {
 
 }

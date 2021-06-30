@@ -47,6 +47,7 @@ public class KoalaResortStepDefinitions {
 
     @Then("sayfaya giris yapamadigini kontrol eder")
     public void sayfayaGirisYapamadiginiKontrolEder() {
+
         Assert.assertTrue(koalaResortPage.loginError.isDisplayed());
     }
 }
